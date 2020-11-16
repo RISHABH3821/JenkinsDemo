@@ -13,11 +13,10 @@ pipelineJob('nse-api-job') {
             scm {
                 git {
                     remote {
+                        credentials('gitlab-rishabh')
                         url 'http://gitlab.blr.teksystems.com/interns2020/campus-training.git'
                     }
                     branch 'develop'
-                    [http]
-                    sslVerify = false
                 }
             }
         }
