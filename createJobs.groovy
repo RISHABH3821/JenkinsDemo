@@ -13,7 +13,7 @@ pipelineJob('nse-api-job') {
             scm {
                 git {
                     remote {
-                        url 'https://gitlab.blr.teksystems.com/interns2020/campus-training.git'
+                        url 'http://gitlab.blr.teksystems.com/interns2020/campus-training.git'
                     }
                     branch 'develop'
                 }
