@@ -16,6 +16,7 @@ pipelineJob('nse-api-job') {
                         url 'https://gitlab.blr.teksystems.com/interns2020/campus-training.git'
                     }
                     branch 'develop'
+                    http.sslVerify false
                 }
             }
         }
