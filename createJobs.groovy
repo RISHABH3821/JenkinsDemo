@@ -7,7 +7,7 @@ pipelineJob('pipelineJob') {
     }
 }
 
-pipelineJob('nse-api-job') {
+pipelineJob('nse-api-job-aws') {
     definition {
         cpsScm {
             scm {
@@ -16,7 +16,7 @@ pipelineJob('nse-api-job') {
                         credentials('gitlab-rishabh')
                         url 'http://gitlab.blr.teksystems.com/interns2020/campus-training.git'
                     }
-                    branch '*/dockerimplementation'
+                    branch '**/dockerimplementation'
                 }
             }
         }
